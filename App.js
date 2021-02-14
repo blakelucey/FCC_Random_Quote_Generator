@@ -1,7 +1,6 @@
 import './App.css';
 import Button from './Button.js';
 import React, {Component} from 'react';
-import {random} from 'lodash';
 
 
 class App extends Component {
