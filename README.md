@@ -1,3 +1,8 @@
+App.js is the main file that I am working out of, a Button component has been created and has been imported from Button.js.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
