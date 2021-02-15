@@ -15,7 +15,7 @@ class App extends Component {
 
 //Mounting Component fetches data from the link below.  Which contains the array used in the code.
   componentDidMount() {
-    fetch('https://gist.githubusercontent.com/signed0/d70780518341e1396e11/raw/2a7f4af8d181a714f9d49105ed57fafb3f450960/quotes.json')
+    fetch('https://gist.githubusercontent.com/natebass/b0a548425a73bdf8ea5c618149fe1fce/raw/f4231cd5961f026264bb6bb3a6c41671b044f1f4/quotes.json')
     .then(data => data.json())
     .then(quotes => this.setState({quotes}))
   };
