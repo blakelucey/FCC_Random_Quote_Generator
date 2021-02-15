@@ -15,8 +15,8 @@ class App extends Component {
 
 //Mounting Component fetches data from the link below.  Which contains the array used in the code.
   componentDidMount() {
-    fetch('https://raw.githubusercontent.com/aprilmintacpineda/super-quotes/master/raw/quotes2.txt')
-    .then(data => data.text())
+    fetch('https://gist.githubusercontent.com/signed0/d70780518341e1396e11/raw/2a7f4af8d181a714f9d49105ed57fafb3f450960/quotes.json')
+    .then(data => data.json())
     .then(quotes => this.setState({quotes}))
   };
 
