@@ -34,19 +34,18 @@ class App extends Component {
   return (
     <div className="App" id = 'quote-box'>
       <header className="App-header">
-        <h1 id = 'text'>
+        <p className = 'text' id = 'text'>
           {this.state.quote.quote}
-        </h1>
-          <p id = 'author'>
+        </p>
+          <h2 className = 'text' id = 'author'>
             - {this.state.quote.author}
-          </p>
-          <a
+          </h2>
+          <a href='twitter.com/intent/tweet' className = 'fa fa-twitter'
           id = 'tweet-quote'>
-          <p>Twitter Link Here</p>
             </a>
 
 
-          <Button buttonDisplayName = 'New Quote' clickHandler = {this.newQuote}/>
+          <Button  buttonDisplayName = 'New Quote' clickHandler = {this.newQuote}/>
       </header>
     </div>
   );
