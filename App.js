@@ -8,8 +8,10 @@ class App extends Component {
     super(props);
       this.state = {
         quotes: [],
+        quote: ''
 
       }
+      this.newQuote = this.newQuote.bind(this)
 
   }
 
@@ -18,25 +20,25 @@ class App extends Component {
     fetch('https://gist.githubusercontent.com/natebass/b0a548425a73bdf8ea5c618149fe1fce/raw/f4231cd5961f026264bb6bb3a6c41671b044f1f4/quotes.json')
     .then(data => data.json())
     .then(quotes => this.setState({quotes}))
+    .then(() => this.newQuote())
   };
 
 //Generate New Quote
   newQuote() {
     var randomNumber = Math.floor(Math.random() * (this.state.quotes.length));
-    document.getElementById('quoteDisplay').innerHTML = this.state.quotes[randomNumber];
+    //document.getElementById('quoteDisplay').innerHTML = this.state.quotes[randomNumber];
+    this.setState({quote: this.state.quotes[randomNumber]});
   }
 
   render(){
   return (
     <div className="App" id = 'quote-box'>
       <header className="App-header">
-        <div id = 'quoteDisplay'>
-
-
-        </div>
         <h1 id = 'text'>
+          {this.state.quote.quote}
         </h1>
           <p id = 'author'>
+            - {this.state.quote.author}
           </p>
           <a
           id = 'tweet-quote'>
@@ -44,7 +46,7 @@ class App extends Component {
             </a>
 
 
-          <Button buttonDisplayName = 'New Quote' clickHandler = {this.newQuote()}/>
+          <Button buttonDisplayName = 'New Quote' clickHandler = {this.newQuote}/>
       </header>
     </div>
   );
