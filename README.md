@@ -1,8 +1,3 @@
-## App.js is the main file that I am working out of. 
-## A Button component has been created and has been imported from Button.js.
-
-
-
 
 # Getting Started with Create React App
 
