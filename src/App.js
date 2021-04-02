@@ -33,21 +33,30 @@ class App extends Component {
   render(){
   return (
     <div className="App" id = 'quote-box'>
-      <header className="App-header">
+      <img src = '/img/quote-image.jpg' className = 'image' alt = 'lake'></img>
+
+<div className = 'quote'>
         <p className = 'text' id = 'text'>
           {this.state.quote.quote}
         </p>
           <h2 className = 'text' id = 'author'>
             - {this.state.quote.author}
           </h2>
-          <a href='twitter.com/intent/tweet' className = 'fa fa-twitter'
+        </div>
+          <div className = 'socialIcons'>
+            <a href='twitter.com/intent/tweet' className = 'fa fa-twitter'
           id = 'tweet-quote'>
             </a>
+            <a href='instagram.com/intent/post' className ='fa fa-instagram' id ='post-quote'></a>
+            </div>
 
 
+<div className = 'button'>
           <Button  buttonDisplayName = 'New Quote' clickHandler = {this.newQuote}/>
-      </header>
+          </div>
     </div>
+
+
   );
 }
 }

@@ -1,17 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 /*Font Awesome CSS */
 .fa {
@@ -30,37 +16,60 @@
 .fa-twitter {
   background: #55ACEE;
   color: white;
+  position: absolute;
+ top: 70%;
+ left: 90%;
+}
+.fa-twitter:hover {
+  transform: scale(1.5);
 }
 
-.text {
-  margin: 20px;
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 80%;
+}
+.fa-instagram:hover {
+  transform: scale(1.5);
+}
+.socialIcons {
   display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
 }
 
 
-.App-header {
-  background-color: black;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#text {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 300;
+  width: auto;
+  height: auto;
+}
+#author {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+.quote {
+  position: absolute;
+  top: 20%;
+  left: 35%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image {
+  width: 100%
+}
+.button {
+  position: absolute;
+  top: 75%;
+  left: 10%;
+}
+.button:hover {
+  transform: scale(1.5)
 }
