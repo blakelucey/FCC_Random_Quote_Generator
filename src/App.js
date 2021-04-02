@@ -33,7 +33,7 @@ class App extends Component {
   render(){
   return (
     <div className="App" id = 'quote-box'>
-      <img src = '/img/quote-image.jpg' className = 'image' alt = 'lake'></img>
+      <img src = '/quote-image.jpg' className = 'image' alt = 'lake'></img>
 
 <div className = 'quote'>
         <p className = 'text' id = 'text'>
