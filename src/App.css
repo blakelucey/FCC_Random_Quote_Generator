@@ -5,9 +5,10 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  padding: 20px;
+  padding: 30px;
   font-size: 30px;
   width: 30px;
+  height: 30px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -17,8 +18,8 @@
   background: #55ACEE;
   color: white;
   position: absolute;
- top: 70%;
- left: 90%;
+ top: 69%;
+ left: 82%;
 }
 .fa-twitter:hover {
   transform: scale(1.5);

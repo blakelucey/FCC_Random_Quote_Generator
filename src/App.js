@@ -44,10 +44,7 @@ class App extends Component {
           </h2>
         </div>
           <div className = 'socialIcons'>
-            <a href='twitter.com/intent/tweet' className = 'fa fa-twitter'
-          id = 'tweet-quote'>
-            </a>
-            <a href='instagram.com/intent/post' className ='fa fa-instagram' id ='post-quote'></a>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" className = 'fa fa-twitter' data-show-count="false" target = 'blank'></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
 
 
